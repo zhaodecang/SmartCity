@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.zdc.smartcity.view.NoScrollViewPage
+        android:id="@+id/nsvp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bottom_tab_bg"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/Bottom_tab_style"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_news"
+            style="@style/Bottom_tab_style"
+            android:drawableTop="@drawable/tab_news_selector"
+            android:text="新闻中心" />
+
+        <RadioButton
+            android:id="@+id/rb_smart"
+            style="@style/Bottom_tab_style"
+            android:drawableTop="@drawable/tab_smart_selector"
+            android:text="智慧服务" />
+
+        <RadioButton
+            android:id="@+id/rb_gov"
+            style="@style/Bottom_tab_style"
+            android:drawableTop="@drawable/tab_gov_selector"
+            android:text="天气预报" />
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/Bottom_tab_style"
+            android:drawableTop="@drawable/tab_setting_selector"
+            android:text="设置" />
+    </RadioGroup>
+
+</LinearLayout>

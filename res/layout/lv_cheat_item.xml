@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <LinearLayout
+        android:id="@+id/ll_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cheat_left_tv_selector"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="5dip"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tv_answer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:text="没停明白..."
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_answer_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dip"
+            android:scaleType="centerCrop"
+             />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_asker_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/cheat_right_tv_selector"
+        android:gravity="center_vertical"
+        android:paddingBottom="12dip"
+        android:paddingRight="12dip"
+        android:paddingTop="12dip"
+        android:text="你好呀, 吃饭了吗!!"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+</LinearLayout>

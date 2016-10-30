@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/shape_weather_info_bg" >
+
+        <TextView
+            android:id="@+id/tv_weather_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="当前城市:北京"
+            android:textColor="#bfff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_weather_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:text="24°"
+            android:textColor="#bfff"
+            android:textSize="74sp" />
+
+        <TextView
+            android:id="@+id/tv_weather_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="67dp"
+            android:text="多云"
+            android:textColor="#cfff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_weather_wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="67dp"
+            android:text="风力1级"
+            android:textColor="#cfff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/shape_date_weather_info_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:gravity="center_horizontal"
+            android:text="未来三天"
+            android:textColor="#fff"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tv_weather_date1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="18dp"
+            android:text="[10月01日]\n\t白天：阵雨，30℃，无持续风向；\n\t夜晚：中雨，23℃，无持续风向"
+            android:textColor="#cfff"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_weather_date2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="18dp"
+            android:text="[10月01日]\n\t白天：阵雨，30℃，无持续风向；\n\t夜晚：中雨，23℃，无持续风向"
+            android:textColor="#cfff"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_weather_date3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:paddingLeft="18dp"
+            android:text="[10月01日]\n\t白天：阵雨，30℃，无持续风向；\n\t夜晚：中雨，23℃，无持续风向"
+            android:textColor="#cfff"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

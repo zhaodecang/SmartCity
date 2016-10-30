@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription" severity="ignore" />
+    <issue id="HardcodedText" severity="ignore" />
+    <issue id="Orientation" severity="ignore" />
+    <issue id="TextFields">
+        <ignore path="res/layout/activity_cheat.xml" />
+    </issue>
+    <issue id="UseCompoundDrawables" severity="ignore" />
+</lint>

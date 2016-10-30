@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zdc="http://schemas.android.com/apk/res/com.zdc.smartcity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/shape_setting_top_bg" >
+
+            <ImageView
+                android:id="@+id/iv_user_header"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_user_header"
+                android:layout_centerHorizontal="true"
+                android:text="用户名"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_setting_qq_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="center"
+                android:src="@drawable/ssdk_oks_classic_qq" />
+
+            <ImageView
+                android:id="@+id/iv_setting_sina_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:scaleType="center"
+                android:src="@drawable/ssdk_oks_classic_sinaweibo" />
+        </RelativeLayout>
+
+        <com.zdc.smartcity.view.SettingItemView
+            android:id="@+id/siv_message"
+            style="@style/siv_style"
+            android:layout_marginTop="5dp"
+            zdc:root_bg_style="first"
+            zdc:title="消息通知" />
+
+        <com.zdc.smartcity.view.SettingItemView
+            style="@style/siv_style"
+            zdc:root_bg_style="middle"
+            zdc:title="离线任务" />
+
+        <com.zdc.smartcity.view.SettingItemView
+            style="@style/siv_style"
+            zdc:root_bg_style="middle"
+            zdc:title="特别关注" />
+
+        <com.zdc.smartcity.view.SettingItemView
+            style="@style/siv_style"
+            zdc:root_bg_style="last"
+            zdc:title="我要爆料" />
+
+        <com.zdc.smartcity.view.SettingItemView
+            style="@style/siv_style"
+            android:layout_marginTop="6dp"
+            zdc:root_bg_style="first"
+            zdc:title="检查更新" />
+
+        <com.zdc.smartcity.view.SettingItemView
+            style="@style/siv_style"
+            zdc:root_bg_style="middle"
+            zdc:title="清理缓存" />
+        <com.zdc.smartcity.view.SettingItemView
+            android:id="@+id/siv_feedback"
+            style="@style/siv_style"
+            zdc:root_bg_style="middle"
+            zdc:title="意见反馈" />
+
+        <com.zdc.smartcity.view.SettingItemView
+            style="@style/siv_style"
+            zdc:root_bg_style="last"
+            zdc:title="关于掌盟" />
+    </LinearLayout>
+
+</ScrollView>

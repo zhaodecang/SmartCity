@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#cc1798FB"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/theme_color"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="请输入城市"
+        android:textColor="#fff"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/et_city"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="#ccc"
+        android:hint="请输入你所在的城市"
+        android:padding="12dp"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_submit"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="#87D0FB"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="确认"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="#87D0FB"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="取消"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</LinearLayout>

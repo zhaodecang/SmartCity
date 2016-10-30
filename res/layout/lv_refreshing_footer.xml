@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <ProgressBar
+        android:id="@+id/pb_loading_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:indeterminateDrawable="@drawable/refreshing_progress"
+        android:indeterminateDuration="500"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="加载更多"
+            android:textColor="#f00"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_footer_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上次加载时间"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
